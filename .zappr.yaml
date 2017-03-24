@@ -33,6 +33,6 @@ specification:
     contains-url: true
     # contains an issue number
     contains-issue-number: true
-   template:
+  template:
      # is different from pull request body
      differs-from-body: true
