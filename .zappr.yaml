@@ -5,7 +5,7 @@
 # uncomment this if you want to change anything
 approvals:
     pattern: "^lgtm"
-    minimum: 1
+    minimum: 0
     ignore: last_committer
     from:
         users:
