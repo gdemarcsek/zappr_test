@@ -7,10 +7,31 @@ approvals:
     pattern: "^lgtm"
     minimum: 1
     ignore: last_committer
-   from:
-     users:
-      - gdemarcsek
-      - kepten
-      - korsosa
-      - mzgaon-prezi
+    from:
+        users:
+            - gdemarcsek
+            - kepten
+            - korsosa
+            - mzgaon-prezi
       
+      
+specification:
+  # title requirements AND body AND template requirements have to match
+  title:
+    # PR title is at least this many characters long
+    minimum-length:
+      enabled: true
+      length: 8
+  body:
+    # either of these verifications has to be true
+    # PR body is at least this many characters long
+    minimum-length:
+      enabled: true
+      length: 32
+    # contains a link
+    contains-url: true
+    # contains an issue number
+    contains-issue-number: true
+   template:
+     # is different from pull request body
+     differs-from-body: true
