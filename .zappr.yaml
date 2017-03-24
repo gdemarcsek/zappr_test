@@ -7,13 +7,15 @@ approvals:
     pattern: "^lgtm"
     minimum: 1
     ignore: last_committer
-    from:
-        minimum: 1
-        users:
-            - gdemarcsek
-            - kepten
-            - korsosa
-            - mzgaon-prezi
+    groups:
+        owners:
+            minimum: 1
+            from:
+                users:
+                    - gdemarcsek
+                    - kepten
+                    - korsosa
+                    - mzgaon-prezi
       
       
 specification:
